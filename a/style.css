@@ -1,0 +1,68 @@
+#intro{
+	font-size: 18px;
+	padding: 0 10px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #000000;
+	text-transform: uppercase;
+}h2{
+	font-size: 40px;
+	text-transform: uppercase;
+}h3{color:#ffffff;margin:30px 15px 0 15px;font-weight:600;font-size:30px;}header{padding:25px;background:rgba(225,123,209,1);color:#ffffff;}.question h3{color:rgba(225,123,209,1);}.question{text-align:center;}form{margin:0 15px;}.answer{cursor:pointer;margin:25px auto;}#q1,#q2,#q3,#q4,#final,#results-header,#v1,#v2,#v3,#v4,#v5{display:none;}#results-header{text-align:center;}.validate h3{font-size:16px;margin:20px 0px;font-weight:bold;color:rgba(225,123,209,1);}.validate strong{color:rgba(225,123,209,1);}.validate span{color:#ffffff;}#final{max-width:545px;margin:30px auto;padding:15px;border:1px solid #b1b1b1;background:#272727;}.validate span{display:block;min-height:30px;padding-left:35px;background:url(final1.png) no-repeat scroll 0% 0% transparent;margin:10px 0px;}.validate ol{margin-left:40px;color:#ffffff;}.validate li{margin:10px 0px;}.validate p{text-align:center;margin:20px 0px;}p{font-size:16px;}#popup-wrapper{background-color: rgba(225,123,209,0.7);}.option,.option2,.option3,.option4{
+	background: #272727 url(option5.png) 30px center no-repeat;
+}.selected,.selected2,.selected3,.selected4{
+	background: #272727 url(option-selected5.png) 30px center no-repeat;
+}#terms{font-size:13px;color:#ffffff;}.must{color:rgba(225,123,209,1);}.close-popup,.yes,.no,.next,.agree{background:#88ba7e;display:inline-block;text-decoration:none;color:#fff;font-size:35px;text-transform:uppercase;padding:10px 35px;font-family:Roboto condensed;margin:10px 0 0;}.no{margin-left:15px;}.next{margin:10px 0;}.agree{font-weight:bold;text-transform:none;}#q0 header{margin-bottom:30px;}#q0 h3 strong{color:rgba(225,123,209,1);}#q0 h3{margin:20px auto 0;font-weight:600;font-size:23px;max-width:800px;padding:0 15px;}#q0 .lucky,#q0 .stepinfo{max-width:800px;margin:20px auto 0;font-size:18px;padding:0 15px;color:#ffffff;}#q0 .option-intro{max-width:720px;text-align:center;margin:20px auto 12px;padding:30px 33px;background:#272727;}#q0 .option-title{margin-left:0px;}#q0 .answer{margin:25px auto 0;}.option,.option2,.option3,.option4{
+	max-width: 500px;
+	border: 1px solid #313131;
+	padding: 40px 33px;
+	text-align: left;
+	cursor: pointer;
+	margin: 0 auto 12px;
+}.option-title{color:#ffffff;font-weight:600;font-size:30px;line-height:32px;display:block;padding:0;margin-left:50px;}*{padding:0;margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}.option{-webkit-touch-callout:none;-webkit-user-select:none;2-khtml-user-drag: none;-khtml-user-select:none;3-moz-user-select: none;-moz-user-select:-moz-none;-ms-user-select:none;4user-select: none;}.option:active{background-color:none;}#popup-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+}#popup{width:300px;background:#ffffff;position:relative;top:40%;left:50%;text-align:center;margin:-210px 0 0 -150px;padding:10px;border:1px solid #313131;}@media screen and (max-width : 700px), only screen and (max-device-width: 700px){header{padding:15px;}h2{font-size:20px;margin:0;}h3{margin:15px 15px 0 15px;font-size:14px;}#q0 h3{font-size:18px;max-width:800px;padding:0 15px;}#q0 .lucky{max-width:800px;margin:20px auto 0;font-size:14px;padding:0 15px;}#q0 .stepinfo{max-width:600px;margin:20px auto 0;font-style:normal;font-weight:400;font-size:14px;padding:0 15px;}.stepinfo{font-size:12px;margin:5px 0 15px 0;}.option,.option2,.option3,.option4{padding:15px 10px 15px 30px;margin:0 auto 12px}.option-title{font-size:18px;line-height:23px;margin-left:50px;padding-top:5px;}#q0 .option-title{font-size:18px;margin-left:0px;}#final{margin:15px auto;}#intro-image{width:200px;}.answer{width:150px;margin:15px auto;}#q0 .answer{width:110px;margin:25px auto 0;}.agree img{width:150px;}@media screen and (max-width : 600px), only screen and (max-device-width: 600px){
+    .answer {
+      margin: 12px auto;
+    }
+    #final {
+      margin: 15px 15px;
+    }
+    /* 360x640 & 320x480 */
+    @media screen and (max-width : 470px), only screen and (max-device-width: 470px){
+      #q0 .option{
+        margin: 20px 15px 12px;
+      }
+      header {
+        padding: 10px;
+      }
+      .option, .option2, .option3, .option4 {
+        margin: 0 15px 12px;
+      }
+      #popup {
+        top: 55%;
+      }
+    }
+    /* 360x640 & 320x480 */
+    @media screen and (max-width : 320px), only screen and (max-device-width: 320px){
+      header {
+        padding: 10px;
+      }
+      #popup {
+        top: 55%;
+      }
+      .yes, .no {
+        font-size: 24px;
+        padding: 10px 20px;
+      }
+      .next, .agree {
+        font-size: 26px;
+        padding: 10px 20px;
+      }
+    }
+    
