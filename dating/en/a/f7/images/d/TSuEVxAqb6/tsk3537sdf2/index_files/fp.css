@@ -1,0 +1,171 @@
+input, textarea, select {
+    display: block;
+    width: auto;
+    font: inherit;
+    line-height: 1.470588235;
+    color: #555555;
+    vertical-align: middle; 
+    margin-bottom: 1.176470588em;
+	margin-left:auto;
+	margin-right:auto; 
+    padding: .294117647em; 
+    border: .071428571em solid #b8b8b8; 
+    border-radius: .176470588em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+input[type="image"], 
+input[type="checkbox"], 
+input[type="radio"] {
+    display: inline-block;
+    width: auto; 
+    height: auto; 
+    padding: 0; 
+    cursor: pointer; 
+}
+
+input.disabledClass  { 
+    margin-bottom:0 !important; 
+    padding:0 !important; 
+    border:0 !important;
+    
+}
+
+.view { display:none;}
+
+.status-override {
+    background-color: #FFF !important;
+    border: 1px solid transparent !important;
+}
+
+.error-override {
+    display:none !important;
+}
+
+
+.view {
+    margin:auto;
+    text-align:center;
+    display:none;
+}
+
+.active_view {
+    display:block !important;
+}
+
+.validating {
+    background-image: url('../../../../css/fp/img/ajax-loader.html');
+    background-repeat: no-repeat;
+    background-position: right center;
+    border:1px dashed #C9B900;
+}
+
+.validated {
+    background-color: #EAF0C2;
+    border:1px solid #B8CB31;
+}
+
+.conflicted {
+    background-color: #FFFDBF;
+    border:1px solid #EFEB7F;
+}
+
+.errored {
+    background-color:#FFCED1;
+    border:1px solid #D44149;
+}
+
+.error {
+    font-weight:bold;
+    color:red;
+    display:none;
+    margin-top:10px;
+}
+
+.error_show {
+    display:block;
+}
+
+.next {
+    padding:10px;
+    font-size:20px;
+    line-height:20px;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+.next:disabled {
+    color:#999;
+    background-color:#CCC;
+    /*display:none;*/
+}
+
+
+div.suggest-menu-wrap.open {
+    display:block;
+}
+
+div.suggest-menu-wrap {
+    position:absolute;
+    z-index: 10000;
+    min-width: 230px;    
+    display:none;
+}
+
+div.suggest-menu {
+    position:absolute;
+    width:100%;
+    min-height:0;
+    max-height:200px;
+    overflow:auto;
+    background-color:#FFF;
+    box-shadow:0 3px 3px -1px rgba(0, 0, 0, .5);
+    border:1px solid #CCC;
+	   margin:auto;
+}
+
+div.suggest-menu-option {
+    display:block;
+    padding:5px;
+    color:#666;
+    text-align:left;
+    border-bottom:1px solid #CCC;
+    border-top:1px solid #EEE;
+    cursor:pointer;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+div.suggest-menu-option:hover {
+    color:#000;
+    background-color:#EEE;
+}
+
+div.suggest-menu-error,
+div.suggest-menu-loading {
+    display:block;
+    padding:5px;
+    color:#666;
+    text-align:center;
+    overflow:hidden;
+    cursor:wait;
+    height:30px;
+    line-height:30px;
+    background-image: url('../../../../css/fp/img/ajax-loader.html');
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+div.suggest-menu-error {
+    background-image: none;
+    font-weight:bold;
+    color:#D44149;
+    cursor:default;
+}
+
+	#country_options {
+ 	display:none; 
+ }

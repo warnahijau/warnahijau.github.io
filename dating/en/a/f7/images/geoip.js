@@ -1,0 +1,1 @@
+function geoip_country_code(){return""}function geoip_country_name(){return""}function geoip_city(){return""}function geoip_region(){return""}function geoip_region_name(){return""}function geoip_latitude(){return""}function geoip_longitude(){return""}function geoip_postal_code(){return""}function geoip_area_code(){return"0"}function geoip_metro_code(){return""}
