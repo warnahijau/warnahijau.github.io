@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Find Your Sex Partner</title>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="css/style.css"
+          type="text/css" media="screen, projection">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+
+    <!--[if lte IE 6]>
+    <style type="text/css" media="screen">
+        form label {
+            background: #fff;
+        }
+    </style>
+    <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<body class="l_9m">
+<div class="container">
+    <div class="box">
+        <!--h1><b>Caution!</b> There are a lot of lonely girls on this site.</h1-->
+        <h1><b>Caution!</b> DESPERATE WOMEN HERE WANT ONLY QUICK SEX</h1>
+
+        <div id="agree_area">
+            <div class="text">
+                <!--p>
+                    This is a dating site that enables you to quickly meet girls and women. Every day we have thousands
+                    of new users who want only one thing – serious dating.
+                </p-->
+                <p>
+                Before we can show you a list and photos of women who live near you and are ready to have sex right now, we need to ask a couple of questions.
+                </p>
+            </div>
+
+            <div class="step question">
+                <h2>Question 1</h2>
+
+                <p>Many of these women are desperate single moms and married women looking to cheat. They could be your neighbors or someone you know. Do you agree to keep the identity of these women a secret?</p>
+
+                <div class="button button_green next">Yes</div>
+                <div class="button button_red next">No</div>
+            </div>
+
+            <div class="step hidden question">
+
+                <h2>Question 2</h2>
+
+                <p>These women have asked us to not allow men that are seeking a "relationship". They only desire quick sex. Not dating. Do you agree to this request?</p>
+
+                <div class="button button_green next">Yes</div>
+                <div class="button button_red next">No</div>
+            </div>
+
+            <div class="step hidden question">
+
+                <h2>Question 3</h2>
+
+                <p>How do you feel about the girl initiating contact?</p>
+
+                <div class="button button_green verify">Good</div>
+                <div class="button button_red verify">Bad</div>
+            </div>
+
+            <div class="step verify_container hidden question">
+                <h2>Processing responses</h2>
+                <ul id="verify">
+                    <li><b>&hearts;</b> ♥ Processed!</li>
+                    <li><b>613</b> active users in your city</li>
+                    <li><b>329</b> girls online right now</li>
+                    <li>You can continue with your registration</li>
+                </ul>
+                <div class="loader"></div>
+                <a class="button_primary agree"
+                   href="http://u1gxp.trackvoluum.com/click">Continue</a>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.backgroundpos.min.js"></script>
+    <script>
+
+        setInterval(function () {
+            $('body').animate({'background-position': '0px +=1px'}, 1);
+        }, 50);
+
+        jQuery(function () {
+            $('.next').click(function () {
+                getNextStep($(this));
+            });
+
+            $('.verify').click(function () {
+                getNextStep($(this));
+                verifyAnimation();
+                $(".text").addClass('hidden');
+            });
+        });
+
+        function getNextStep(anchor) {
+            anchor.closest('.step').animate({
+                top: '+=20',
+                opacity: 0
+            }, 200, function () {
+                var next_step = jQuery(this).next('.step.hidden');
+                jQuery(this).hide();
+                next_step.removeClass('hidden').animate({top: '-=20'}, 0).css('opacity', 0).show().delay(100).animate({top: '0', opacity: 1}, 200);
+            });
+        }
+
+        function verifyAnimation() {
+            var chatLoadDelay = 2000;
+            $('#verify li').each(function () {
+                $(this).delay(chatLoadDelay).animate({opacity: 1}, 0, function () {
+                    $(this).show();
+                });
+                chatLoadDelay = chatLoadDelay + 1000;
+            });
+
+            setTimeout(function () {
+                jQuery('.verify_container .loader').hide();
+                jQuery('.verify_container .button_primary').css('display', 'block');
+            }, 8000);
+
+            var $online = $('#verify li:nth-child(3) b');
+            var deley = 5000;
+            setTimeout(function () {
+                var online_count = parseInt($online.text()) + Math.round(Math.random() * 10 * 3 / 2);
+                $online.text(online_count);
+
+                setTimeout(function () {
+                    $online.text(online_count - Math.round(Math.random() * 10));
+                }, Math.round(deley / 3 * 2));
+                setTimeout(arguments.callee, deley);
+            }, deley);
+        }
+    </script>
+</div>
+</body>
+</html>
